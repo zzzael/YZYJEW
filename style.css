@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'OCRB';
+    src: url('ocr-b.otf') format('opentype');
+}
+
+body {
+    font-family: 'OCRB', monospace;
+    font-size: 15px;
+    background-color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.container {
+    text-align: left;
+    margin-left: 20px;  /* Adjust this value as needed */
+    margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+.splyew {
+    margin-bottom: 30px;
+}
+
+.dead-freestyle {
+    margin-bottom: 20px;
+}
+
+.delivered {
+    margin-bottom: 20px;
+}
+
+.track-length {
+    margin-bottom: 20px;
+}
+
+/* 'DOWNLOAD NOW' style, inheriting the same design as 'PREORDER' */
+.download {
+    margin-bottom: 50px;
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.download:hover {
+    text-decoration: underline; /* Optional underline on hover */
+}
+
+.copyright {
+    margin-top: 20px;
+}
