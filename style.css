@@ -9,45 +9,45 @@ body {
     background-color: white;
     margin: 0;
     height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    position: relative;
 }
 
-.container {
-    text-align: left;
-    margin-left: 20px;  /* Adjust this value as needed */
-    margin-bottom: 20px; /* Adjust this value as needed */
+/* Container for the bottom-left text */
+.bottom-left-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
-.splyew {
-    margin-bottom: 30px;
+.splyew,
+.dead-freestyle,
+.delivered,
+.track-length,
+.download,
+.copyright {
+    margin-bottom: 10px;
 }
 
-.dead-freestyle {
-    margin-bottom: 20px;
-}
-
-.delivered {
-    margin-bottom: 20px;
-}
-
-.track-length {
-    margin-bottom: 20px;
-}
-
-/* 'DOWNLOAD NOW' style, inheriting the same design as 'PREORDER' */
 .download {
-    margin-bottom: 50px;
-    color: black; /* Text color */
-    text-decoration: none; /* Remove underline */
-    cursor: pointer; /* Show pointer on hover */
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .download:hover {
-    text-decoration: underline; /* Optional underline on hover */
+    text-decoration: underline;
 }
 
-.copyright {
-    margin-top: 20px;
+/* GIF container centered on the screen */
+.gif-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preview-gif {
+    width: 500px;
+    height: 500px;
+    display: block;
 }
